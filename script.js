@@ -12,10 +12,9 @@ for(x=0;x<16;x++){
     for(y=0;y<16;y++){
          gridBox= document.createElement("div");
         gridBox.className="gridElement";
+        gridBox.addEventListener("mouseover", function(e){
+            e.target.style.backgroundColor="blue";
+        });
         gridRow.append(gridBox);
     }
 }
-gridBox= document.querySelector(".gridElement");
-gridBox.addEventListener("click", function(e){
-    e.target.style.backgroundColor="blue";
-});
