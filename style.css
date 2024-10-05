@@ -1,0 +1,18 @@
+.gridElement {
+    border:1px solid red;
+    height: 20px;
+    width: 20px;
+    /* margin: 2px; */
+    flex: 0 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: column;
+    
+}
+
+.gridrow0,.gridrow1,.gridrow2,.gridrow3,.gridrow4,.gridrow5,.gridrow6,.gridrow7,.gridrow8,.gridrow9,.gridrow10,.gridrow11,.gridrow12,.gridrow13,.gridrow14,.gridrow15 {
+    display: flex;
+}
