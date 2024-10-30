@@ -1,18 +1,28 @@
 .gridElement {
-    border:1px solid red;
-    height: 20px;
-    width: 20px;
+    /* border:1px solid red; */
+    /* height: 20px;
+    width: 20px; */
     /* margin: 2px; */
-    flex: 0 0 auto;
+    flex: 1 1 auto;
 }
 
 .container{
     display: flex;
-    flex-wrap: wrap;   
+    /* flex-wrap: wrap;    */
     flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border: black solid 1px;
     
 }
 
-.gridrow0,.gridrow1,.gridrow2,.gridrow3,.gridrow4,.gridrow5,.gridrow6,.gridrow7,.gridrow8,.gridrow9,.gridrow10,.gridrow11,.gridrow12,.gridrow13,.gridrow14,.gridrow15 {
+.gridrow{
     display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    /* flex-wrap: wrap; */
+}
+
+.input {
+    margin: 20px;
 }

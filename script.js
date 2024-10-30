@@ -4,17 +4,27 @@ const container= document.querySelector(".container");
 //     gridBox.className="gridElement";
 //     container.append(gridBox);
 // }
+const inp= document.querySelector("#item");
+const btn= document.querySelector("#button");
+
 let gridBox;
-for(x=0;x<16;x++){
-    const gridRow= document.createElement("div");
-    gridRow.className=`gridrow${x}`
-    container.append(gridRow);
-    for(y=0;y<16;y++){
-         gridBox= document.createElement("div");
-        gridBox.className="gridElement";
-        gridBox.addEventListener("mouseover", function(e){
-            e.target.style.backgroundColor="blue";
-        });
-        gridRow.append(gridBox);
+
+btn.addEventListener("click",()=>{
+
+    container.innerHTML=null;
+
+    const inputValue=inp.value;
+    for(x=0;x<inputValue;x++){
+        const gridRow= document.createElement("div");
+        gridRow.className=`gridrow`
+        container.append(gridRow);
+        for(y=0;y<inputValue;y++){
+            gridBox= document.createElement("div");
+            gridBox.className="gridElement";
+            gridBox.addEventListener("mouseover", function(e){
+                e.target.style.backgroundColor="blue";
+            });
+            gridRow.append(gridBox);
+        }
     }
-}
+})
